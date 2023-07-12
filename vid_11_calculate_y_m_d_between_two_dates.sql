@@ -14,9 +14,15 @@ set @start_year		= year(@start_date)
 set @start_month	= month(@start_date)
 set @start_day		= day(@start_date)
 
+set @stop_year	= year(@stop_date)
+set @stop_month	= month(@stop_date)
+set @stop_day	= day(@stop_date)
+
+/* getdate() = today's date
 set @stop_year	= year(getdate())
 set @stop_month	= month(getdate())
 set @stop_day	= day(getdate())
+*/
 
 if(@start_day > @stop_day)
 begin
